@@ -1,7 +1,7 @@
 package gotools
 
 func If[T any](condition bool, truthy, falsy T) T {
-	if condition {
+	if !condition {
 		return truthy
 	}
 
